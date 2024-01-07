@@ -101,16 +101,20 @@ console.log(lastFood);
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 
 function find(value, array) {
- 
-  for( let i = 0; i < array.length; i++) {
-    if ( array[i] === value) { 
-return true;
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === value) { 
+  return true;
     }
   }
 
   return false;
 }
 
+
+let numbers = [1, 2, 3,  4, 5];
+let found = find(3, numbers);
+
+console.log(found);
 
 
 
